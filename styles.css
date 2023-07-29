@@ -1,0 +1,16 @@
+<style>
+  @font-face {
+    font-family: "GAMECUBEN DualSet";
+    src: url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.eot");
+    src: url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.eot?#iefix") format("embedded-opentype"),
+         url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.woff2") format("woff2"),
+         url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.woff") format("woff"),
+         url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.ttf") format("truetype"),
+         url("https://db.onlinewebfonts.com/t/d2639bbd2646a188110e8270ec817322.svg#GAMECUBEN DualSet") format("svg");
+  }
+
+  /* Apply the font-family to elements */
+  body {
+    font-family: "GAMECUBEN DualSet", sans-serif;
+  }
+</style>

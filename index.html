@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haze Music Label</title>
+  <!-- Link to Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://db.onlinewebfonts.com/c/d2639bbd2646a188110e8270ec817322?family=GAMECUBEN+DualSet" rel="stylesheet">
+</head>
+
+<body>
+  <div class="video-bg flex items-center justify-center h-screen">
+    <video src="landscape.mp4" loop autoplay muted preload="none" playsinline
+      class="absolute top-0 left-0 w-full h-full object-cover"></video>
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-75"></div>
+    <div class="flex flex-col justify-center items-center h-full text-white relative">
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">HAZE</h1>
+      <p class="text-lg mb-12">Discover the latest beats and sounds.</p>
+      <div class="flex gap-4">
+        <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
+          onclick="showContent('home')">HOME</a>
+        <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
+          onclick="showContent('music')">MUSIC</a>
+        <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
+          onclick="showContent('sample-packs')">SAMPLE PACKS</a>
+        <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
+          onclick="showContent('contacts')">CONTACTS</a>
+      </div>
+
+      <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="home-content">
+        <h2 class="text-xl font-bold mb-4">Welcome to Haze Music Label!</h2>
+        <p>Bem-vindo à Haze Music Label, onde a música instrumental e experimental se combinam numa jornada única de hip hop antigo e contemporâneo. Somos dois irmãos com uma essência lusa, procurando ultrapassar fronteiras e criar ligações através da nossa paixão pela música. Junta-te a nós nesta viagem sonora inovadora e autêntica.</p>
+      </div>
+      <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="music-content">
+        <h2 class="text-xl font-bold mb-4">Check out our latest music releases!</h2>
+        <div class="flex gap-4">
+          <a href="https://www.youtube.com/@Haze.records" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-red-500 hover:bg-red-600 text-black hover:text-white transition-all duration-300">YouTube</a>
+          <a href="https://open.spotify.com/intl-pt/track/6joY9Y2dYk1vmmQZmvfGz6" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300">Spotify</a>
+        </div>
+      </div>
+      <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="sample-packs-content">
+        <h2 class="text-xl font-bold mb-4">Explore our sample packs collection!</h2>
+        <p>SAMPLE PACKS SOON HERE AND ON BEATSTARS, BANDCAMP</p>
+      </div>
+      <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="contacts-content">
+        <h2 class="text-xl font-bold mb-4">Get in touch with us!</h2>
+        <p>hazerecordspt@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showContent(contentType) {
+      const contentElements = document.getElementsByClassName('content');
+      for (let i = 0; i < contentElements.length; i++) {
+        contentElements[i].style.display = 'none';
+      }
+      const selectedContent = document.getElementById(`${contentType}-content`);
+      selectedContent.style.display = 'block';
+    }
+  </script>
+</body>
+
+</html>
