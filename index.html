@@ -20,7 +20,7 @@
       .btn {
         width: 100%;
       }
-      .flex-col-gap {
+      .btn-container {
         flex-direction: column;
       }
     }
@@ -35,7 +35,7 @@
     <div class="flex flex-col justify-center items-center h-full text-white relative px-6 md:px-12 lg:px-24">
       <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">HAZE</h1>
       <p class="text-lg text-center mb-12">Discover the latest beats and sounds.</p>
-      <div class="flex gap-4 md:flex-col-gap">
+      <div class="flex gap-4 md:btn-container">
         <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
           onclick="showContent('home')">HOME</a>
         <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
@@ -52,7 +52,7 @@
       </div>
       <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="music-content">
         <h2 class="text-xl font-bold mb-4">Check out our latest music releases!</h2>
-        <div class="flex gap-4 md:flex-col-gap">
+        <div class="flex gap-4 md:btn-container">
           <a href="https://www.youtube.com/@Haze.records" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-red-500 hover:bg-red-600 text-black hover:text-white transition-all duration-300">YouTube</a>
           <a href="https://open.spotify.com/intl-pt/track/6joY9Y2dYk1vmmQZmvfGz6" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300">Spotify</a>
         </div>
