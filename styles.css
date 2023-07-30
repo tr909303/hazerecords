@@ -55,4 +55,17 @@
   }
 }
 
-/* Add any other custom styles for your webpage */
+/* Center the content within the .video-bg element */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.content {
+  max-width: 600px; /* Adjust the max-width as per your preference */
+  width: 100%;
+}
+</style>
