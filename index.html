@@ -11,7 +11,9 @@
   <link href="https://db.onlinewebfonts.com/c/d2639bbd2646a188110e8270ec817322?family=GAMECUBEN+DualSet" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
-    @media (max-width: 640px) {
+    /* Additional CSS styles, if any */
+	  
+	   @media (max-width: 640px) {
       .video-bg {
         height: auto;
       }
@@ -25,15 +27,19 @@
         flex-direction: column;
       }
     }
+	  
+    /* Add any custom styles here */
   </style>
 </head>
 
 <body>
   <div class="video-bg flex items-center justify-center min-h-screen">
-    <video src="landscape.mp4" loop autoplay muted preload="none" playsinline class="absolute top-0 left-0 w-full h-full object-cover"></video>
+    <!-- Video background code -->
+    <video src="landscape.mp4" loop autoplay muted playsinline class="absolute top-0 left-0 w-full h-full object-cover"></video>
     <div class="absolute top-0 left-0 w-full h-full bg-black opacity-75"></div>
+    <!-- Content container -->
     <div class="flex flex-col justify-center items-center h-full text-white relative px-6 md:px-12 lg:px-24">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">HAZE</h1>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mt-16 mb-8">HAZE</h1>
       <p class="text-lg text-center mb-12">Discover the latest beats and sounds.</p>
       <div class="flex gap-4 md:flex-row flex-col btn-container justify-center items-center">
         <a href="#" class="btn btn-primary text-lg px-8 py-3 rounded-full bg-green-500 hover:bg-green-600 text-black hover:text-white transition-all duration-300"
@@ -46,6 +52,7 @@
           onclick="showContent('contacts')">CONTACTS</a>
       </div>
 
+      <!-- Content sections -->
       <div class="content hidden mt-8 p-4 border border-white rounded-lg max-w-md" id="home-content">
         <h2 class="text-xl font-bold mb-4">Welcome to Haze Music Label!</h2>
         <p>Bem-vindo à Haze Music Label, onde a música instrumental e experimental se combinam numa jornada única de hip hop antigo e contemporâneo. Somos dois irmãos com uma essência lusa, procurando ultrapassar fronteiras e criar ligações através da nossa paixão pela música. Junta-te a nós nesta viagem sonora inovadora e autêntica.</p>
@@ -70,28 +77,28 @@
     </div>
   </div>
 
-  <footer class="bg-black text-white py-2 sm:py-4 absolute bottom-0 w-full">
-  <div class="container mx-auto px-6">
-    <div class="footer-content flex flex-wrap justify-center items-center">
-      <div class="w-full text-center sm:text-left mb-2 sm:mb-0">
-        <h4 class="text-lg font-bold">Follow Us</h4>
-        <div class="flex justify-center sm:justify-start mt-2 footer-icons">
-          <!-- Font Awesome Icons for social media -->
-          <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+  <footer class="py-2 sm:py-4 absolute bottom-0 w-full" style="background-color: transparent; color: white; text-align: center;">
+    <div class="container mx-auto px-6">
+      <div class="footer-content flex flex-wrap justify-center items-center">
+        <div class="w-full text-center sm:text-left mb-2 sm:mb-0">
+          <h4 class="text-lg font-bold">Follow Us</h4>
+          <div class="flex justify-center sm:justify-start mt-2 footer-icons">
+            <!-- Font Awesome Icons for social media -->
+            <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mr-2 hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
       </div>
+      <div class="text-center mt-2 sm:mt-4">
+        <p class="text-xs sm:text-sm text-gray-400">All rights reserved &copy; 2023 Haze Music Label</p>
+      </div>
     </div>
-    <div class="text-center mt-2 sm:mt-4">
-      <p class="text-xs sm:text-sm text-gray-400">All rights reserved &copy; 2023 Haze Music Label</p>
-    </div>
-  </div>
-</footer>
-
+  </footer>
 
   <script>
+    // Function to show content based on the button clicked
     function showContent(contentType) {
       const contentElements = document.getElementsByClassName('content');
       for (let i = 0; i < contentElements.length; i++) {
