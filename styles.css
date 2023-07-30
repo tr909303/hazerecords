@@ -14,3 +14,45 @@
     font-family: "GAMECUBEN DualSet", sans-serif;
   }
 </style>
+/* styles.css */
+
+/* Add your custom styles here, if any */
+
+/* Center the "HAZE" heading and social media icons */
+.video-bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Add this style to center the social media icons in the footer */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: Adjust the icon size if needed */
+.footer-icons a {
+  font-size: 24px;
+  margin: 0 8px; /* Adjust the margin as per your preference */
+}
+
+/* Responsive for 1024px resolution */
+@media (max-width: 1024px) {
+  .flex-col {
+    flex-direction: column;
+  }
+  .md:justify-start {
+    justify-content: flex-start;
+  }
+  .md:text-left {
+    text-align: left;
+  }
+  .md:text-right {
+    text-align: right;
+  }
+}
+
+/* Add any other custom styles for your webpage */
